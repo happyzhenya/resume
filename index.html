@@ -132,6 +132,39 @@
       <li>Conscientious</li>
     </ul>
   </section>
+  <section class="code-example" id="code-example">
+    <h2 class="section-title">Code example</h2>
+    <details>
+      <summary> From Codewars</summary>
+      <pre>
+        <code data-language="JavaScript">function formatDuration(seconds) {
+          // Complete this function
+          if (seconds == 0) { return "now" }
+          let years = Math.floor(seconds / (60 * 60 * 24 * 365));
+          let days = Math.floor(seconds / (60 * 60 * 24)) % 365;
+          let hours = Math.floor(seconds / (60 * 60)) % 24;
+          let minutes = Math.floor(seconds / 60) % 60;
+          let second = seconds % 60;
+        
+          let time = [years, days, hours, minutes, second];
+          let time_words = ['year', 'day', 'hour', 'minute', 'second'];
+        
+          let writing = time.map(function (el, ind) {
+            if (el > 1) { return el + ' ' + time_words[ind] + 's' }
+            if (el === 1) { return el + ' ' + time_words[ind] }
+          }).filter(el => el !== undefined);
+        
+          if (writing.length > 1) {
+            let last = writing.pop();
+            return writing.join(', ') + ' and ' + last;
+          } else {
+            return writing[0];
+          }
+        }
+      </code>
+      </pre>
+    </details>
+  </section>
 </div>
 
 </html>
