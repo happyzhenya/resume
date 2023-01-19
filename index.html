@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/slider.css" />
   <title>Evgeniya Sushkevich</title>
 </head>
 
@@ -30,12 +31,48 @@
       </ul>
     </nav>
   </header>
-
   <main class="container">
     <div class="left-side">
-      <figure class="figure-left-side">
-        <img src="images/photo.jpg" width="380" height="507" class="photo" alt="Photo of Evgeniya Sushkevich" />
-      </figure>
+      <section class="figure-left-side">
+        <input checked type="radio" name="respond" id="desktop">
+        <article id="slider">
+          <input checked type="radio" name="slider" id="switch1">
+          <input type="radio" name="slider" id="switch2">
+          <input type="radio" name="slider" id="switch3">
+          <input type="radio" name="slider" id="switch4">
+          <input type="radio" name="slider" id="switch5">
+          <div id="slides">
+            <div id="overflow">
+              <div class="image">
+                <article><img src="images/photo.jpg" width="380" height="507" class="photo"
+                    alt="Photo of Evgeniya Sushkevich" /></article>
+                <article><img src="images/myphoto1.jpg" width="380" height="507" class="photo"
+                    alt="Photo of Evgeniya Sushkevich" /></article>
+                <article><img src="images/myphoto2.jpg" width="380" height="507" class="photo"
+                    alt="Photo of Evgeniya Sushkevich" /></article>
+                <article><img src="images/myphoto3.jpg" width="380" height="507" class="photo"
+                    alt="Photo of Evgeniya Sushkevich" /></article>
+                <article><img src="images/myphoto4.jpg" width="380" height="507" class="photo"
+                    alt="Photo of Evgeniya Sushkevich" /></article>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+          </div>
+          <div id="active">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+          </div>
+        </article>
+      </section>
       <section class="contact" id="contact">
         <h2 class="section-title">Contact</h2>
         <ul class="contact__list">
