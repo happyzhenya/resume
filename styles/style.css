@@ -119,6 +119,13 @@ header {
 .left-side .section-title {
   background-color: rgb(78, 78, 94);
 }
+.figure-left-side {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: min-content;
+  background-color: var(--left-side-bg-color);
+}
 .contact {
   padding: 44px 0px 54px 0px;
   background-color: rgb(33, 33, 45);
